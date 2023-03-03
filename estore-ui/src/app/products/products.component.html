@@ -1,0 +1,42 @@
+<html>
+<h2>Our Products</h2>
+
+<div *ngIf="checkIfAdmin(); else elseBlock">
+  <div class="products">
+    <div *ngFor="let product of products" class="card" id="product-{{product.id}}">
+      <a routerLink="{{getProductUrl(product.id)}}">
+        <h3>{{product.name}}</h3>
+        <img id="img" src="../../assets/images/{{product.name}}.jpg" width="300" height="300" alt="image of product"
+          onerror="this.src = '../../assets/images/logo.jpg'" />
+        <p id="price">${{product.price}}</p>
+      </a>
+      <button *ngIf="deletable" type="button" class="delete" title="delete product"
+        (click)="delete(product)">Delete</button>
+    </div>
+  </div>
+</div>
+
+<ng-template #elseBlock>
+  <app-product-search class="search-bar"></app-product-search>
+  <div class="products">
+    <div *ngFor="let product of products" class="card" id="product-{{product.id}}">
+      <a routerLink="{{getProductUrl(product.id)}}">
+        <h3 class="title">
+          {{product.name}}
+        </h3>
+        <div *ngIf="product.copies == 0 else otherImage">
+          <img id="img" src="../../assets/images/out.png" width="300" height="300" alt="image of product"/>
+        </div>
+        <ng-template #otherImage>
+          <img id="img" src="../../assets/images/{{product.name}}.jpg" width="300" height="300" alt="image of product"
+          onerror="this.src = '../../assets/images/logo.jpg'" />
+        </ng-template>
+        <p id="price">${{product.price}}</p>
+      </a>
+      <button *ngIf="deletable" type="button" class="delete" title="delete product"
+        (click)="delete(product)">Delete</button>
+    </div>
+  </div>
+</ng-template>
+
+</html>

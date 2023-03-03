@@ -1,0 +1,26 @@
+html{
+    text-align: center;
+}
+
+h1, h3, p{
+    color: #7f664A;
+    font-size: 3em;
+}
+
+p{
+    font-size: 2em;
+}
+
+button{
+    border-radius: 8px;
+    font-size: 40px;
+    padding: 20px;
+    background-color: sienna;
+    color: white;
+    border-color: sienna;
+    transition-duration: .4s;
+}
+
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

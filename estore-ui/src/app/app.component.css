@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    font-size: 70px;
+    padding: 50px;
+    background-color: #ABB26D;
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    color: white;
+}
+nav{
+    text-align: center;
+}
+
+nav ul{
+    display: inline-block;
+    list-style: none;
+    font-family: Garamond, 'Times New Roman', Times, serif;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 8px 30px 8px 30px;
+    background-color: #8A6822;
+    font-size: 200%;
+}

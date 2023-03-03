@@ -1,0 +1,18 @@
+<html>
+    <div class="product" *ngIf="product">
+        <h1>{{product.name}}</h1>
+        <div class="image">
+            <img id="img" src="../../assets/images/{{product.name}}.jpg" width="350" height="350" alt="image of product"
+                onerror="this.src = '../../assets/images/logo.jpg'" />
+        </div>
+        <div class="content">
+            <p class="description">{{product.description}}</p>
+            <div class="extended-info">
+                <h3>${{product.price}}</h3>
+                <p>Amount Left in Inventory: {{product.copies}}</p>
+            </div>
+            <button type="button" (click)="goBack()">Go Back</button>
+            <button type="button" (click)="addToCart(product)">Add to Cart</button>
+        </div>
+    </div>
+</html>

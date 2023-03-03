@@ -1,0 +1,32 @@
+[
+    {
+        "id" : 1,
+        "name" : "potsIsFun",
+        "discount" : 10,
+        "products" : ["Small Pot", "Medium Pot", "Large Pot", "3 Pot Bundle"]
+    },
+    {
+        "id" : 2,
+        "name" : "flowerPower",
+        "discount" : 20,
+        "products" : ["Azalea", "Daffodil", "Lily", "Rose", "Tulip"]
+    },
+    {
+        "id" : 3,
+        "name" : "greenMachine",
+        "discount" : 5,
+        "products" : ["Aloe", "Cactus", "Boxwood"]
+    },
+    {
+        "id" : 4,
+        "name" : "TOOL",
+        "discount" : 75,
+        "products" : ["Cultivator", "Watering Can"]
+    },
+    {
+        "id" : 5,
+        "name" : "moneyBag",
+        "discount" : 33,
+        "products" : ["Bag of Soil", "Bag of Grass Seed"]
+    }
+]

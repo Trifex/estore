@@ -1,0 +1,29 @@
+<div class="product" *ngIf="product">
+    <div class="image">
+        <img id="img" src="../../assets/images/{{product.name}}.jpg" width="150" height="150" alt="image of product" onerror="this.src = '../../assets/images/logo.jpg'" />
+
+    </div>
+    <h1>
+        <label for="product-name">Product name: </label>
+        <input id="product-name" [(ngModel)]="product.name" placeholder="name">
+    </h1>
+    <div class="content">
+        <p class="description">
+            <label for="product-description">Product description: </label>
+            <input id="product-description" [(ngModel)]="product.description" placeholder="description">
+        </p>
+
+        <div class="extended-info">
+            <h3>
+                <label for="product-price">Product price: </label>
+                <input id="product-price" [(ngModel)]="product.price" placeholder="price">
+            </h3>
+            <p>
+                <label for="product-copies">Amount Left in Inventory: </label>
+                <input id="product-copies" [(ngModel)]="product.copies" placeholder="copies">
+            </p>
+        </div>
+        <button type="button" (click)="goBack()">go back</button>
+        <button type="button" (click)="save()">save</button>
+    </div>
+</div>

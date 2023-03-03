@@ -1,0 +1,23 @@
+<h1>{{title}}</h1>
+<nav>
+  <div *ngIf="checkLogin()">
+    <div *ngIf="checkIfAdmin(); else elseBlock">
+      <div *ngIf="checkAdminDetail(); else elseBlock">
+        <ul><a routerLink="/">Log Out</a></ul>
+      </div>
+      <ng-template #elseBlock></ng-template>
+    </div>
+  <ng-template #elseBlock>
+    <div *ngIf="checkDetail(); else elseBlock">
+      <ul><a routerLink="/home/{{getName()}}">Home</a></ul>
+      <ul><a routerLink="/products/{{getName()}}">Browse Products</a></ul>
+      <ul><a routerLink="/carts/{{getName()}}">Shopping Cart</a></ul>
+      <ul><a routerLink="/">Log Out</a></ul>
+    </div>
+    <ng-template #elseBlock>
+      
+    </ng-template>
+  </ng-template>
+</div>
+</nav>
+<router-outlet></router-outlet>

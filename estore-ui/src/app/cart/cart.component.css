@@ -1,0 +1,57 @@
+p {
+    color: #fff;
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+
+h2 {
+    color: #fff;
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color: #0f1111;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 29px;
+    padding: 0 10px 0 11px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 100px;
+}
+
+#items{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+    display: inline-block;
+    padding: 10px 30px 0px 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+#applyButton{
+    width: fit-content;
+}

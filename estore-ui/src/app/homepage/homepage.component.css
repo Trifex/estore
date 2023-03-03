@@ -1,0 +1,48 @@
+.flex-grid {
+   display: flex;
+   flex-wrap: wrap;
+   height: 500px;
+}
+
+.grid-item {
+   flex: 1 1 500px;
+}
+
+.flex-grid p {
+   font-size: large;
+}
+
+html {
+   display: grid;
+   margin: 0 auto;
+   max-width: 1000px;
+   width: 90%;
+   text-align: center;
+}
+
+.top img {
+   padding-top: 5%;
+}
+
+.top h1 {
+   font-size: 300%;
+}
+
+.top p {
+   font-size: x-large;
+}
+
+.founder h1 {
+   padding-bottom: 5%;
+}
+
+.flex-grid img {
+   padding-bottom: 5%;
+}
+
+.flex-grid p {
+   text-align: center;
+   margin: auto;
+   padding-bottom: 5%;
+   width: 80%;
+}

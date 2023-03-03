@@ -1,0 +1,41 @@
+/*
+*{
+    border: 1px solid black;
+}
+*/
+
+
+
+h2{
+    text-align: center;
+}
+
+button{
+    display: block;
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+    margin: auto;
+    padding: 8px 30px 8px 30px;
+    background-color: #8A6822;
+    font-size: 200%;
+}
+label {
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+input {
+    padding: .5rem;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+  }
+  
+  input:focus {
+    outline: #336699 auto 1px;
+  }
